@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regression_analysis", "Regression_analysis\Regression_analysis.csproj", "{EA24CDAF-C5E7-4326-96D9-77E031A91480}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{BFED94F2-9815-4C88-8C3E-4575712AE2F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA24CDAF-C5E7-4326-96D9-77E031A91480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA24CDAF-C5E7-4326-96D9-77E031A91480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA24CDAF-C5E7-4326-96D9-77E031A91480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA24CDAF-C5E7-4326-96D9-77E031A91480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFED94F2-9815-4C88-8C3E-4575712AE2F5}.Debug|Any CPU.ActiveCfg = Debug
+		{BFED94F2-9815-4C88-8C3E-4575712AE2F5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BA15A6B-88CB-4DD5-88A8-26B3034397E4}
+	EndGlobalSection
+EndGlobal

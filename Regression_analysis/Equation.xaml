@@ -1,0 +1,65 @@
+﻿<Window x:Class="Regression_analysis.Equation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Regression_analysis"
+        mc:Ignorable="d"
+        Title="Equation" Height="500" Width="680">
+    <Grid>
+        <StackPanel>
+            <TextBox FontSize="16" Margin="5 10 5 0" IsReadOnly="True" Style="{DynamicResource MaterialDesignDataGridTextColumnEditingStyle}">Этапы построения уравнения регрессии для температуры спекания и диаметра зерна:</TextBox>
+            <DataGrid FontSize="12" ItemsSource="{Binding Equations1}" IsReadOnly="True" Style="{DynamicResource MaterialDesignDataGrid}" GridLinesVisibility="Vertical" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible" AutoGenerateColumns="False" MaxHeight="300" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Degree}" >
+                        <DataGridTextColumn.Header>
+                            <TextBlock>
+                                Степень <LineBreak></LineBreak> полинома
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Equation}">
+                        <DataGridTextColumn.Header>
+                            <TextBlock >
+                                Уравнение регрессии
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Variance}">
+                        <DataGridTextColumn.Header>
+                            <TextBlock>
+                                Остаточная <LineBreak></LineBreak> дисперсия
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBox FontSize="16" Margin="5 5 5 0" IsReadOnly="True" Style="{DynamicResource MaterialDesignDataGridTextColumnEditingStyle}">Этапы построения уравнения регрессии для температуры спекания и диаметра зерна:</TextBox>
+            <DataGrid FontSize="12" ItemsSource="{Binding Equations2}" IsReadOnly="True" Style="{DynamicResource MaterialDesignDataGrid}" GridLinesVisibility="Vertical" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible" AutoGenerateColumns="False" MaxHeight="300" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Degree}" >
+                        <DataGridTextColumn.Header>
+                            <TextBlock>
+                                Степень <LineBreak></LineBreak> полинома
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Equation}">
+                        <DataGridTextColumn.Header>
+                            <TextBlock >
+                                Уравнение регрессии
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Variance}">
+                        <DataGridTextColumn.Header>
+                            <TextBlock>
+                                Остаточная <LineBreak></LineBreak> дисперсия
+                            </TextBlock>
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
